@@ -1,0 +1,240 @@
+// global styles
+@import "../global";
+// home page style
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x:hidden;
+}
+.hero {
+  border-bottom: 10px solid $prime;
+  background: url("../../img/bg-heor.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.hamburger {
+  color: #fff;
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: $screen-sm) {
+    display: block;
+  }
+}
+
+header {
+  padding-top: 4rem;
+
+  @media (max-width: $screen-md) {
+    padding-top: 2rem;
+  }
+}
+
+.logo-name {
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: bold;
+
+  @media (max-width: $screen-md) {
+    font-size: 1.8rem;
+  }
+}
+
+.hero-nav {
+  display: block;
+
+  @media (max-width: $screen-sm) {
+    display: none;
+    margin-right: 15px;
+    width: 100%;
+  }
+}
+
+.hero-nav-small {
+  display: none;
+
+  @media (max-width: $screen-sm) {
+    display: none;
+    margin-right: 15px;
+    width: 100%;
+  }
+}
+
+
+.hero-nav-item {
+  display: inline-block;
+  margin-left: 3rem;
+
+  @media (max-width: $screen-sm) {
+    display: block;
+    border: 1px solid $white;
+    border-radius: 1.5rem;
+    margin-bottom: 0.5rem;
+    height: 100%;
+    text-align: center;
+
+    .hero-nav-item:hover {
+      background: $gray;
+      color: $gray;
+    }
+    &:hover {
+      background: #fff;
+      color: black;
+    }
+  }
+}
+
+.hero-subtitle {
+  margin-bottom: 7rem;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 6rem;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 4rem;
+  }
+}
+
+.hero-title {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 10rem;
+  line-height: 1.4;
+  font-weight: bold;
+
+  @media (max-width: $screen-md) {
+    font-size: 3.4rem;
+    margin-bottom: 5rem;
+  }
+  @media (max-width: $screen-sm) {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+  }
+}
+//section {
+//  min-height: 20rem; //TODO: delete before commit
+//}
+.service-section {
+  .picture {
+    width: 16.5rem;
+    height: 16.5rem;
+    margin: 0 auto;
+
+    @media (max-width: $screen-sm) {
+      margin-bottom: 3rem;
+    }
+  }
+  .service-description {
+    height: 12rem;
+    margin: auto;
+    //margin-bottom: 5rem;
+    font-size: 1.6rem;
+    color: $gray;
+  }
+}
+.hamburger-menu {
+  color: white;
+}
+.triangle {
+  width: 10rem;
+  height: 9rem;
+  margin-top: 4rem;
+}
+.distances {
+  @media (max-width: $screen-sm) {
+    margin-bottom: 5rem;
+  }
+}
+.list-unstyled {
+  padding: 5px 15px 5px 15px;
+  line-height: 3rem;
+  color: #fff;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+.my-name {
+  font-weight: bold;
+  font-size: 2.3rem;
+  margin-top: 2rem;
+
+}
+.place_of_work {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  color: gray;
+}
+.quote {
+width: 10rem;
+}
+a.my-email {
+  color: $green;
+  text-decoration: underline;
+  //font-weight: bold;
+}
+  a.my-email:hover {
+    border-bottom: none;
+  }
+.imgProject {
+  width: 26.2rem;
+  height: 19.7rem;
+  }
+.border-for-img {
+  border: 0.1rem solid $grayShade;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 2rem;
+  width: 27.4rem;
+  height: 20.9rem;
+
+
+}
+.orange-hover {
+  border: 0.1rem solid $orange;
+  border-radius: 0.5rem;
+  padding: 5rem;
+  width: 27.4rem;
+  height: 20.9rem;
+  background: $orange;
+  opacity: 0.9;
+  position: absolute;
+
+  //@media (max-width: $screen-sm) {
+  //  margin: -2.5rem 13.5rem 13.5rem;
+  //}
+}
+.img-with-hover:hover .orange-hover{
+  display: block;
+}
+.img-with-hover div.orange-hover {
+  display: none;
+  font-size: 2.3rem;
+  color: $white;
+}
+
+.footerBackground {
+  background: $darkDarkGray;
+}
+.imgFooter {
+  margin-right: 3rem;
+}
+.textCopyright {
+  color: $gray;
+  margin-bottom: 1rem;
+}
+.footerImg:hover {
+  border-bottom: none;
+}
+.carousel-indicators>li.active {
+  background: $green !important;
+  margin-bottom: -7rem;
+}
+.carousel-indicators>li {
+  background: $white !important;
+  margin-bottom: -7rem;
+}
+
